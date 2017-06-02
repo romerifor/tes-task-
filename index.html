@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400&amp;subset=cyrillic" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar">
+    <a href="#" class="active">Личная информация</a>
+    <a href="#">Опыт</a>
+    <a href="#">JavaScript</a>
+    <a href="#">О себе</a>
+</nav>
+<section>
+    <h1>Анкета</h1>
+
+    <div class="icon icon-information"></div>
+
+    <h2>Личная информация</h2>
+
+    <div class="input-group">
+        <input placeholder="ФИО" type="text">
+        <label>
+            <input class="birthday" placeholder="Год рождения" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date">
+        </label>
+        <input placeholder="Место проживания" type="text">
+        <input placeholder="Skype" type="text">
+        <input placeholder="E-mail" type="email">
+    </div>
+
+    <div class="icon-experience"></div>
+
+    <h2>Расскажите о своем опыте</h2>
+
+    <div class="checkbox-group">
+        <div>
+            <label>
+                <input type="checkbox" id="Checkbox1" value="option1">БЭМ/OOCSS
+            </label>
+            <label>
+                <input type="checkbox" id="Checkbox2" value="option2">Stylus/LESS/SASS
+            </label>
+            <label>
+                <input type="checkbox" id="Checkbox3" value="option3">Работаю с SVG
+            </label>
+        </div>
+        <div class="">
+            <label>
+                <input type="checkbox" id="Checkbox4" value="option4">Верстаю семантично
+            </label>
+            <label>
+                <input type="checkbox" id="Checkbox5" value="option5">ES2015/ES2016
+            </label>
+            <label>
+                <input type="checkbox" id="Checkbox6" value="option6">Gulp/GRUNT
+            </label>
+        </div>
+        <div>
+            <label>
+                <input type="checkbox" id="Checkbox7" value="option7">Webpack
+            </label>
+            <label>
+                <input type="checkbox" id="Checkbox8" value="option8">jQuery
+            </label>
+            <label>
+                <input type="checkbox" id="Checkbox9" value="option9">Ипользую Git
+            </label>
+        </div>
+    </div>
+
+    <div class="icon icon-js"></div>
+
+    <h2>Уровень владения JavaScript</h2>
+
+    <div class="progress-bar">
+
+        <div class="progress-bar--levels">
+            <div class="text level-1">Не владею</div>
+            <div class="text level-2">Использую готовые<br>решения</div>
+            <div class="text level-3">Использую готовые решения<br>и умею и переделывать</div>
+            <div class="text level-4">Пишу сложный JS с нуля</div>
+        </div>
+
+        <div class="progress-bar--progress"></div>
+        <div class="control"></div>
+    </div>
+
+    <div class="icon icon-about"></div>
+
+    <h2>Расскажите о себе</h2>
+
+    <h4>Напишите несколько предложений, чем привлекла наша вакансия<br>
+        и что вы ожидаете от работы у нас.
+    </h4>
+
+    <textarea>Понравилась тем, что...</textarea>
+
+    <a href="#" class="btn">готово</a>
+</section>
+</body>
+</html>
